@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.2.31"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- マスタッシュで変数名、キーの名前を書く(リアルタイムで書き換え可) -->
+        この中が仮想DOM
+        この中にVUEを書いていく
+        {{ message }}
+
+        
+
+    </div>
+
+    <script>
+        const HelloVue3 = {
+            data(){
+                return {
+                    message: 'Hello Vue3',
+                }
+            }
+        }
+
+        // Vue3の起動
+        // create Appのインスタンス生成
+        
+
+        Vue.createApp(HelloVue3).mount('#app')
+
+
+    </script>
+    
+</body>
+</html>
